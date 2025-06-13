@@ -606,7 +606,7 @@ font-weight: 700;
 
 .contact-info i {
     margin-right: 1rem;
-    color: #7A1527;
+    color: #000;
     font-size: 1.8rem;
     width: 2.5rem;
 }
@@ -631,8 +631,18 @@ font-weight: 700;
 }
 
 .social-links a:hover {
-    background-color: #ab112d;
+    background-color: #fff;
     transform: translateY(-3px);
+}
+.social-links a:hover .fa-github {
+    color: #333; /* Negru pentru GitHub */
+}
+.social-links a:hover .fa-linkedin {
+    color: #0077b5; /* Albastru pentru LinkedIn */
+}
+
+.social-links a:hover .fa-twitter {
+    color: #1DA1F2; /* Albastru deschis pentru Twitter */
 }
 
 .contact-form {
