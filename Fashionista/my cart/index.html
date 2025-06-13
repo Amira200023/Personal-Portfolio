@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashionista</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Render All Elements Normally-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">Fashionista</a>
+        <ul class="main-nav">
+          <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>My Cart</a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i>My Account </a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-shop"></i>Products</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img decoding="async" src="Wavy_Bus-17_Single-09.jpg" alt="" />
+              </div>
+              <ul class="links">
+                <li>
+                    <a href="#"> Dresses & skirts</a>
+                  </li>
+                  <li>
+                    <a href="#"> Pants</a>
+                  </li>
+                  <li>
+                    <a href="#"> Jackets & coats</a>
+                  </li>
+                  <li>
+                    <a href="#"> Sportswear</a>
+                  </li>
+                  <li>
+                    <a href="#"> Shoes</a>
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="#"> Bags</a>
+                  </li>
+                  <li>
+                    <a href="#"> Beauty & health</a>
+                  </li>
+                  <li>
+                    <a href="#"> Home appliances</a>
+                  </li>
+                  <li>
+                    <a href="#"> Kids</a>
+                  </li>
+              </ul>
+            </div>
+            <!-- End Megamenu -->   
+      </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h1>Shopping Cart</h1>
+      </div>
+      <div class="cart">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Details</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="dress.png" alt="Product"></td>
+              <td>
+                <p>Women Denim Dress</p>
+                <p>Essnce Flap Pocket Raw Cut Denim Dress</p>
+              </td>
+              <td>21.00€</td>
+              <td>
+                <button class="delete">🗑</button>
+                            <div class="div">
+                              <small>
+                                <i></i>
+                              </small>
+                            </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="bag.png" alt="Product"></td>
+              <td>
+                <p>Womens Fashionable Tote Bag</p>
+                <p>With large capacity and with bow decoration crossbody bag</p>
+              </td>
+              <td> 14.10€</td>
+              <td>
+                <button class="delete">🗑</button>
+                            <div class="div">
+                              <small>
+                                <i></i>
+                              </small>
+                            </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="blazer.jpg" alt="Product"></td>
+						<td>
+							<p>Women blazer</p>
+							<p>Cottnline Flap Detail Open Front Coat</p>
+						</td>
+						<td>17.00€</td>
+            <td>
+              <button class="delete">🗑</button>
+                            <div class="div">
+                              <small>
+                                <i></i>
+                              </small>
+                            </div>
+            </td>
+					</tr>
+					<tr>
+						<td><img src="pantofi.png" alt="Product"></td>
+						<td>
+              <p> Women's Fashion Boots</p>
+            <p>Black Elegant Solid  Women's Fashion Boots without zip.</p>
+						</td>
+						<td>27.75€</td>
+            <td>
+              <button class="delete">🗑</button>
+                            <div class="div">
+                              <small>
+                                <i></i>
+                              </small>
+                            </div>
+            </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="summary">
+			<h2>Summary</h2>
+			<div class="card-details">
+				<p>Card type</p>
+				<select>
+					<option>VISA</option>
+					<option>AMERICAN EXPRESS</option>
+          <option>Walmart MoneyCard</option>
+          <option>Revolut</option>
+				</select>
+			</div>
+			<div class="card-details">
+				<p>Cardholder's Name</p>
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="card-details">
+				<p>Card Number</p>
+				<input type="text" placeholder="Card Number">
+			</div>
+			<div class="card-details">
+				<p>Expiration</p>
+				<input type="text" placeholder="Expiration">
+			</div>
+      <button class="truck-button">
+        <span class="default">Complete Order</span>
+        <span class="success">
+            Order Placed
+            <svg viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </svg>
+        </span>
+        <div class="truck">
+            <div class="wheel"></div>
+            <div class="back"></div>
+            <div class="front"></div>
+            <div class="box"></div>
+        </div>
+    </button>
+    
+    <!-- dribbble - twitter -->
+    <a class="dribbble" href="https://dribbble.com/shots/9552163-Complete-order-button" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+    <a class="twitter" target="_blank" href="https://twitter.com/aaroniker_me"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"></path></svg></a>
+    
+          <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Fashionista</h3>
+          <p class="text">
+           Follow Us On:
+          </p>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="snapchat">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="box">
+          <ul class="links">
+            <li><a href="#">About Fashionista</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">How to order</a></li>
+            <li><a href="#">How to track</a></li>
+            <li><a href="#">Payment & Taxes</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">Bucarest, Romania </div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw"></i>
+            <div class="info">Business Hours: From 10:00 To 18:00</div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+40123456789</span>
+              <span>+40198765432</span>
+            </div>
+          </div>
+        </div>
+        <div class="box footer-gallery">
+          <img decoding="async" src="imgs/gallery-01.png" alt="" />
+          <img decoding="async" src="imgs/gallery-02.png" alt="" />
+          <img decoding="async" src="imgs/gallery-03.jpg" alt="" />
+          <img decoding="async" src="imgs/gallery-04.png" alt="" />
+          <img decoding="async" src="imgs/gallery-05.jpg" alt="" />
+          <img decoding="async" src="imgs/gallery-06.png" alt="" />
+        </div>
+      </div>
+      <p class="copyright">Made With <i class="fa-solid fa-heart"></i> By Fashionista</p>
+    </div>
+    <!-- End Footer -->
+    <script src="script.js"></script>
+  </body>

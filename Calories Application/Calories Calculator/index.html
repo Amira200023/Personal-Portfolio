@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Calorii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator de calorii</h1></br>
+    <p>Calculatorul necesarului zilnic de calorii si macronutrienti gratuit,</br>
+         Acesta te va ajuta sa obtii rezultatele dorite in cel mai scurt timp, mai usor ca oricand.</br>
+          Introdu informatiile solicitate in aplicatie si vei afla imediat caloriile </br>
+          si portiile de care ai nevoie pentru a slabi sanatos, pentru imbunatatirea sanatatii fizice </br>
+          si psihice sau pentru a creste masa musculara.</p>
+          
+          
+          
+            <form>
+              <label for="weight">Greutate(Kg)</label>
+              <input type="text" id="weight" name="weight"><br>
+              
+              <label for="age">Varsta</label>
+              <input type="text" id="age" name="age"><br>
+              
+              <label for="height">Inaltime(cm)</label>
+              <input type="text" id="height" name="height"><br>
+              <label for="sex">Sex</label>
+              <select name="sex" id="gen">
+                <option value="barbat">Bărbat</option>
+                <option value="femeie">Femeie</option>
+              </select><br>
+              <label for="activity">Nivel de activitate</label>
+    <select name="activity" id="activity">
+        <option value="sedentar">Sedentar</option>
+        <option value="usoara">Activitate ușoară</option>
+        <option value="moderata">Activitate moderată</option>
+        <option value="intensa">Activitate intensă</option>
+        <option value="foarte-intensa">Activitate foarte intensă</option>
+    </select><br>
+    <button type="button" class="btn-calculate" onclick="calculateTDEE()">Calculeaza</button>
+            </form>
+            <p id="result"></p>
+            <script src="script.js"></script>
+  
+</body>
+</html>
